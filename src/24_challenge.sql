@@ -1,11 +1,12 @@
 SELECT
-    u.name AS Nome,
-    COUNT(h.id) AS "Quantidade de músicas reproduzidas"
+    u.full_name AS Nome,
+    COUNT(h.song_id) AS `Quantidade de músicas reproduzidas`
 FROM
     users u
 JOIN
     history_play_songs h ON u.id = h.user_id
 GROUP BY
-    u.id, u.name
+    u.id
 ORDER BY
-    COUNT(h.id) DESC, u.name;
+    `Quantidade de músicas reproduzidas` DESC,
+    Nome;
