@@ -16,7 +16,7 @@ VALUES
     (7, 'Man in the Mirror', 321, 2),
     (8, 'Smooth Criminal', 253, 2),
     (9, 'Dirty Diana', 296, 2),
-    (10, 'I Just Can\'t' Stop Loving You', 241, 2),
+    (10, 'I Just Can\'t Stop Loving You', 241, 2),
     (11, 'Black or White', 222, 3),
     (12, 'Remember the Time', 233, 3),
     (13, 'I Put a Spell on You', 225, 4),
