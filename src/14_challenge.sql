@@ -1,11 +1,11 @@
 SELECT
-    name AS Artista,
-    GROUP_CONCAT(title ORDER BY title ASC SEPARATOR ',') AS Álbuns
+    a.name AS Artista,
+    GROUP_CONCAT(al.title ORDER BY al.id ASC SEPARATOR ',') AS Álbuns
 FROM
-    artists
+    artists a
 JOIN
-    albums ON artists.id = albums.artist_id
+    albums al ON a.id = al.artist_id
 GROUP BY
-    name
+    a.id, a.name
 ORDER BY
-    name ASC, title ASC;
+    a.name ASC;
